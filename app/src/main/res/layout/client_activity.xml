@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars = "vertical"
+    android:fillViewport="true"
+    android:layout_margin="5dp"
+    >
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="creation d'un compte client :"
+        android:textSize="20dp"
+        android:fontFamily="monospace"
+        android:textColor="@color/colorPrimary" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="nom :"
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:fontFamily="monospace"
+        android:textColor="@color/colorPrimary"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/nom"
+        android:background="@drawable/border"
+        android:layout_height="40dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="mot de pass :"
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:fontFamily="monospace"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:background="@drawable/border"
+        android:layout_height="40dp"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="email :"
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:fontFamily="monospace"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/email"
+        android:background="@drawable/border"
+        android:layout_height="40dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:text="telephone :"
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:fontFamily="monospace"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <EditText
+        android:id="@+id/tel"
+        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+        android:layout_width="match_parent"
+        android:background="@drawable/border"
+        android:layout_height="40dp"
+        android:inputType="phone"/>
+
+
+    <Button
+        android:id="@+id/CreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWt"
+        android:fontFamily="monospace"
+        android:text="Envoyer"/>
+
+
+</LinearLayout>
+</ScrollView>

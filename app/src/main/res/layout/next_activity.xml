@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars = "vertical"
+    android:fillViewport="true"
+    android:layout_margin="5dp"
+    >
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="quel compte ?"
+            android:textSize="65dp"
+            android:fontFamily="monospace"
+            android:textColor="@color/colorPrimary" />
+
+
+
+        <Button
+            android:id="@+id/expert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWt"
+            android:fontFamily="monospace"
+            android:text="Expert"
+            android:textSize="50dp"/>
+        <Button
+            android:id="@+id/client"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:textColor="@color/colorPrimary"
+            android:fontFamily="monospace"
+            android:text="Client"
+            android:textSize="50dp"/>
+
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

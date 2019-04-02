@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars = "vertical"
+    android:fillViewport="true"
+    >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:layout_margin="5dp"
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="Bienvenue sur l'application !"
+        android:textSize="28dp"
+        android:fontFamily="monospace"
+        android:textColor="@color/colorPrimary" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="Email :"
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:fontFamily="monospace"
+        android:textColor="@color/colorPrimary"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:background="@drawable/border"
+        android:layout_height="40dp"
+        android:padding="4dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="mot de pass :"
+        android:textSize="20sp"
+        android:visibility="visible"
+        android:fontFamily="monospace"
+        android:textColor="@color/colorPrimary"
+        android:padding="4dp"
+
+        />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="34dp"
+        android:layout_marginRight="34dp"
+        android:inputType="textPassword"
+        android:background="@drawable/border"
+        android:layout_height="40dp"/>
+    <Button
+        android:id="@+id/connexion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWt"
+        android:fontFamily="monospace"
+
+        android:text="Connexion"/>
+    <Button
+        android:id="@+id/newAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorWt"
+        android:fontFamily="monospace"
+        android:text="Creation d'un compte"/>
+
+
+
+</LinearLayout>
+</ScrollView>
